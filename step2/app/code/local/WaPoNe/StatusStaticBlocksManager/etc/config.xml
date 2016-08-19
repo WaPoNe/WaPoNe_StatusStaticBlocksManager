@@ -1,0 +1,28 @@
+<config>
+    <modules>
+        <WaPoNe_StatusStaticBlocksManager>
+            <version>1.0.0</version>
+        </WaPoNe_StatusStaticBlocksManager>
+    </modules>
+
+    <global>
+        <models>
+            <wapone_statusstaticblocksmanager>
+                <class>WaPoNe_StatusStaticBlocksManager_Model</class>
+            </wapone_statusstaticblocksmanager>
+        </models>
+    </global>
+
+    <crontab>
+        <jobs>
+            <wapone_status_blocks_manage>
+                <schedule>
+                    <cron_expr>*/30 * * * *</cron_expr>
+                </schedule>
+                <run>
+                    <model>wapone_statusstaticblocksmanager/statusstaticblocksmanager::manageBlocksStatus</model>
+                </run>
+            </wapone_status_blocks_manage>
+        </jobs>
+    </crontab>
+</config>
