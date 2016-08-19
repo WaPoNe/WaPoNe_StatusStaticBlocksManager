@@ -1,0 +1,107 @@
+<?xml version="1.0"?>
+<config>
+
+    <tabs>
+        <wapone>
+            <label><![CDATA[WaPoNe]]></label>
+            <sort_order>99999</sort_order>
+        </wapone>
+    </tabs>
+
+    <sections>
+        <statusstaticblocksmanager translate="label">
+            <label>Status Static Blocks Manager</label>
+            <tab>wapone</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>1</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <statusstaticblocksmanager_group translate="label">
+                    <label>Status Static Blocks Manager</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <module_enabling_status>
+                            <label>Enabling</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </module_enabling_status>
+                        <blockstoenable>
+                            <label>Blocks to enable</label>
+                            <frontend_type>text</frontend_type>
+                            <comment><![CDATA[Enter the Block IDs to ENABLE, separated by "|".<br />Ex.: 2|53|215]]></comment>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </blockstoenable>
+                        <enablestartdate translate="label">
+                            <label>Date for blocks enabling</label>
+                            <comment>Enter the date in format yyyy-mm-dd</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </enablestartdate>
+                        <enablestarttime>
+                            <label>Time for blocks enabling</label>
+                            <comment>Enter the time in format hh/mm/ss</comment>
+                            <frontend_type>time</frontend_type>
+                            <sort_order>4</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </enablestarttime>
+                        <module_disabling_status>
+                            <label>Disabling</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>5</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </module_disabling_status>
+                        <blockstodisable>
+                            <label>Blocks to disable</label>
+                            <frontend_type>text</frontend_type>
+                            <comment><![CDATA[Enter the Block IDs to DISABLE, separated by "|".<br />Ex.: 2|53|215]]></comment>
+                            <sort_order>6</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_store>0</show_in_store>
+                            <show_in_website>0</show_in_website>
+                        </blockstodisable>
+                        <disablestartdate translate="label">
+                            <label>Date for blocks disabling</label>
+                            <comment>Enter the date in format yyyy-mm-dd</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>7</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </disablestartdate>
+                        <disablestarttime>
+                            <label>Time for blocks disabling</label>
+                            <comment>Enter the time in format hh/mm/ss</comment>
+                            <frontend_type>time</frontend_type>
+                            <sort_order>8</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </disablestarttime>
+                    </fields>
+                </statusstaticblocksmanager_group>
+            </groups>
+        </statusstaticblocksmanager>
+    </sections>
+
+</config>
