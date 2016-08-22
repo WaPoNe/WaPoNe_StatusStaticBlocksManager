@@ -29,6 +29,8 @@ Please use the “Merge” upload mode. Do not replace the whole folders, but me
 3. List the Block IDs to disable, separated by "|".
 4. Enter the date and the time when script has to start (cron job *wapone_status_blocks_manage* runs every five minutes by default).
 
+**After script was executed, _Enabling/Disabling_ field will set to 'No' to avoid it is execute more times**
+
 ## Compability
 
 - Magento CE:
