@@ -18,9 +18,16 @@ Please use the “Merge” upload mode. Do not replace the whole folders, but me
 
 1. Go to System - Configuration - WaPoNe - Status Static Blocks Manager.
 ![](doc/images/statusstaticblocksmanager_config.png)
-2. Set to 'Yes' * Enabling * field if you want to enable CMS blocks.
+2. Set to 'Yes' *Enabling* field if you want to enable CMS blocks.
 3. List the Block IDs to enable, separated by "|".
-4. Enter the date and the time when script has to start (cron job * wapone_status_blocks_manage * runs every five minutes by default).
+4. Enter the date and the time when script has to start (cron job *wapone_status_blocks_manage* runs every five minutes by default).
+
+### Disabling blocks
+
+1. Go to System - Configuration - WaPoNe - Status Static Blocks Manager.
+2. Set to 'Yes' *Disabling* field if you want to disable CMS blocks.
+3. List the Block IDs to disable, separated by "|".
+4. Enter the date and the time when script has to start (cron job *wapone_status_blocks_manage* runs every five minutes by default).
 
 ## Compability
 
