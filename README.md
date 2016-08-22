@@ -14,7 +14,7 @@ Please use the “Merge” upload mode. Do not replace the whole folders, but me
 
 ## User Guide
 
-![](doc/images/timeline2.png)
+![](doc/images/statusstaticblocksmanager_config.png)
 
 ## Compability
 
