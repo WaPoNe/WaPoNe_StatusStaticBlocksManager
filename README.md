@@ -11,3 +11,9 @@ Please use the “Merge” upload mode. Do not replace the whole folders, but me
 5. Go to System — Cache Management page under Magento backend and click “Flush Cache Storage” button. After this action, the extension is installed.
 6. If you need to enable compilation, you can do it now at System — Tools — Compilation.
 7. Please log out of the backend and log in again, so Magento can refresh permissions.
+
+## Compability
+
+- Magento CE:
+  - 1.8.x
+  - 1.9.x
