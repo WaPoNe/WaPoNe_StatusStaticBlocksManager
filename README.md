@@ -12,6 +12,10 @@ Please use the “Merge” upload mode. Do not replace the whole folders, but me
 6. If you need to enable compilation, you can do it now at System — Tools — Compilation.
 7. Please log out of the backend and log in again, so Magento can refresh permissions.
 
+## User Guide
+
+![](doc/images/timeline2.png)
+
 ## Compability
 
 - Magento CE:
