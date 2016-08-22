@@ -28,22 +28,6 @@ class WaPoNe_StatusStaticBlocksManager_Model_StatusStaticBlocksManager extends M
                     Mage::getModel('cms/block')->load($blocks_to_enable[$row])
                         ->setData('is_active', self::ACTIVE)
                         ->save();
-
-                    /* Se si volesse utilizzare gli identifier al posto degli IDs dei blocchi */
-                    /*
-                    $cms_blocks = Mage::getModel('cms/block')->getCollection()
-                        ->addStoreFilter(5)
-                        ->addFieldToFilter('identifier', array('eq' => trim($blocks_to_enable[$row])));
-
-                    Mage::log('Query: '.$cms_blocks->load()->getSelect(), null, 'wapone.log');
-
-                    $blockId = $cms_blocks->getFirstItem()->getBlockId();
-                    Mage::log('Block Identifier:'.$blockId, null, 'wapone.log');
-
-                    Mage::getModel('cms/block')->load($blockId)
-                        ->setData('is_active', self::ACTIVE)
-                        ->save();
-                    */
                 }
                 /*** If you are using Letsi FPC module uncomment line below ***/
                 //Mage::getSingleton('fpc/fpc')->clean();
