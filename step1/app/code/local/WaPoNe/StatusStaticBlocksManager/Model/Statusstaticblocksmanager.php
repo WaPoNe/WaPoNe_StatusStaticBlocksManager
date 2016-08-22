@@ -81,7 +81,7 @@ class WaPoNe_StatusStaticBlocksManager_Model_StatusStaticBlocksManager extends M
         }
     }
 
-    public function manageBlockStatus()
+    public function manageBlocksStatus()
     {
         /*
         $jobsRoot = Mage::getConfig()->getNode('crontab/jobs');
