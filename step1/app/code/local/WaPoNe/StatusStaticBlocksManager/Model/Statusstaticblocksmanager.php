@@ -67,13 +67,6 @@ class WaPoNe_StatusStaticBlocksManager_Model_StatusStaticBlocksManager extends M
 
     public function manageBlocksStatus()
     {
-        /*
-        $jobsRoot = Mage::getConfig()->getNode('crontab/jobs');
-        $jobConfig = $jobsRoot->{$schedule->getJobCode()};
-        $storeId = (string) $jobConfig->store;
-        Mage::log('Store ID:'.$storeId, null, 'wapone.log');
-        */
-
         if ((int)Mage::getStoreConfig('statusstaticblocksmanager/statusstaticblocksmanager_group/module_enabling_status') === 1) :
             $this->enableBlocks();
         endif;
